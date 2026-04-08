@@ -40,7 +40,7 @@ A visually rich, interactive **wall-style calendar UI** built using **Next.js, R
 
 Instead of loading data in useEffect, we used **lazy initialization**:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   const [notes, setNotes] = useState(() => {    const stored = localStorage.getItem('calendarNotes')    return stored ? JSON.parse(stored) : {}  })   `
+`   const [notes, setNotes] = useState(() => {    const stored = localStorage.getItem('calendarNotes')    return stored ? JSON.parse(stored) : {}  })   `
 
 ✅ Avoids extra re-renders✅ Removes React warnings✅ Improves performance
 
@@ -48,7 +48,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Handled stale state issue in date selection:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   setSelectedDates(prev => {    // logic using prev state  })   `
+`   setSelectedDates(prev => {    // logic using prev state  })   `
 
 ✅ Ensures correct range selection✅ Prevents inconsistent UI behavior
 
@@ -56,7 +56,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Used rotateX with dynamic transformOrigin:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   transformOrigin: flipDirection === 'forward'    ? 'top center'    : 'bottom center'   `
+`   transformOrigin: flipDirection === 'forward'    ? 'top center'    : 'bottom center'   `
 
 ✅ Realistic page flip effect✅ Direction-aware animation
 
@@ -64,13 +64,13 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Handled nullable dates safely:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   date ? format(date, 'yyyy-MM-dd') : ''   `
+`   date ? format(date, 'yyyy-MM-dd') : ''   `
 
 ✅ Prevents runtime crashes✅ Eliminates TypeScript errors
 
 ### 5\. Component Structure
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   components/    calendar/      PhysicalCalendar.tsx      CalendarGrid.tsx      DayCell.tsx      HeroImage.tsx   `
+`   components/    calendar/      PhysicalCalendar.tsx      CalendarGrid.tsx      DayCell.tsx      HeroImage.tsx   `
 
 *   **PhysicalCalendar** → Main container
     
@@ -102,19 +102,19 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 ### 1\. Clone the repository
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/your-username/calendar-app.git  cd calendar-app   `
+`   git clone https://github.com/your-username/calendar-app.git  cd calendar-app   `
 
 ### 2\. Install dependencies
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm install   `
+`   npm install   `
 
 ### 3\. Run the development server
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm run dev   `
+`   npm run dev   `
 
 ### 4\. Open in browser
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   http://localhost:3000   `
+`   http://localhost:3000   `
 
 ⚠️ Notes
 --------
